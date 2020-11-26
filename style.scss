@@ -73,9 +73,10 @@ body, html {
         }
     }
     &__content {
+        display: none;
         padding: 10px 50px 50px;
         &--active {
-            //
+            display: block;
         }
     }
 }

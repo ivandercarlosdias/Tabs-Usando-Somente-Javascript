@@ -12,8 +12,9 @@ tabsNav.addEventListener("click", function(e) {
     //console.log(tabButtonClicked);
     if (!tabButtonClicked) return;
 
-    tabs.forEach(function(tab) {
-        tab.classList.remove("tab__button--active");
-    })
+    tabs.forEach(tab => tab.classList.remove("tab__button--active"));
     tabButtonClicked.classList.add("tab__button--active");
+
+    tabsContent.forEach(tabCont => tabCont.classList.remove("tab__content--active"));
+    document.querySelector(`.tab__content--${tabButtonClicked.dataset.tab}`).classList.add("tab__content--active");
 });

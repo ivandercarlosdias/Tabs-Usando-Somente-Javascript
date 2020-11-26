@@ -84,5 +84,10 @@ body, html {
 }
 
 .tab__content {
+  display: none;
   padding: 10px 50px 50px;
+}
+
+.tab__content--active {
+  display: block;
 }
